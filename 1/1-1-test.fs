@@ -19,3 +19,9 @@
 ." 9 9 1 2 1 2 1 2 9 8 sum-dups returns 9 "
 9 9 1 2 1 2 1 2 9 8 sum-dups 9 test-result CR
 
+." 0 1 1 2 2 4 sum-dups-int returns 6 "
+0 1 1 2 2 4 sum-dups-int 6 test-result CR
+
+." 0 1 2 2 1 4 sum-dups-int returns 0 "
+0 1 2 2 1 4 sum-dups-int 0 test-result CR
+
