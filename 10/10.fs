@@ -30,7 +30,16 @@ create buffer 256 cells allot
 	0 to skip
 	64 0 ?do
 		2dup round
-	loop ;
+	loop 2drop ;
+
+: dense-hash ( addr -- )
+	16 0 ?do
+		0
+		16 0 ?do
+			buffer i j 16 * + cells + @ xor
+		loop
+		over i cells + !
+	loop drop ;
 
 : print-dense-hash ( -- )
 	16 0 ?do
