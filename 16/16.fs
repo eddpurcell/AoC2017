@@ -38,21 +38,3 @@
 	over r> index-of ( programs a b )
 	x ;
 
-: quick-dance ( programs -- programs )
-	dup 0 program-addr c@ over scratch-addr 11 chars + c! \ a
-	dup 1 program-addr c@ over scratch-addr 15 chars + c! \ b
-	dup 2 program-addr c@ over scratch-addr 13 chars + c! \ c
-	dup 3 program-addr c@ over scratch-addr 8 chars + c! \ d
-	dup 4 program-addr c@ over scratch-addr 4 chars + c! \ e
-	dup 5 program-addr c@ over scratch-addr 0 chars + c! \ f
-	dup 6 program-addr c@ over scratch-addr 7 chars + c! \ g
-	dup 7 program-addr c@ over scratch-addr 14 chars + c! \ h
-	dup 8 program-addr c@ over scratch-addr 6 chars + c! \ i
-	dup 9 program-addr c@ over scratch-addr 12 chars + c! \ j
-	dup 10 program-addr c@ over scratch-addr 5 chars + c! \ k
-	dup 11 program-addr c@ over scratch-addr 2 chars + c! \ l
-	dup 12 program-addr c@ over scratch-addr 9 chars + c! \ m
-	dup 13 program-addr c@ over scratch-addr 1 chars + c! \ n
-	dup 14 program-addr c@ over scratch-addr 3 chars + c! \ o
-	dup 15 program-addr c@ over scratch-addr 10 chars + c! \ p
-	dup scratch-addr over 0 program-addr 16 move ;
