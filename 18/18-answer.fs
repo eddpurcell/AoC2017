@@ -1,0 +1,3 @@
+include program.fs
+
+program
